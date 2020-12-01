@@ -1,9 +1,9 @@
 <template>
   <v-container app fluid>
-    <v-row>
-      <v-col>
-          Footer
-      </v-col>
+    <v-row justify="center">
+          <p style="font: 2vw Montserrat;" class="mb-5">
+             Максим&Таня 2021
+          </p>
     </v-row>
   </v-container>
 </template>
