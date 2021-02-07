@@ -1,30 +1,32 @@
 <template>
-  <v-container>
+  <v-container style="margin-top: -1.5%; width: 65%;">
     <v-row justify="center">
-      <h1>На мероприятии будут присутствовать:</h1>
-    </v-row>
-    <v-row justify="center">
-       <v-col cols="6">
-         
-         <v-row justify="center"><h2>Координатор Дарья Чегодаева</h2></v-row>
-        <v-row justify="center"  class="mb-3">(По любым организицонным вопросам <v-icon>$vuetify.icons.vk</v-icon>)</v-row>
-         <v-row justify="center">
-          <v-img contain  max-height="443" max-width="452" src="@/assets/Daria.jpg"></v-img>
-        </v-row>
+      <v-col>
+          <v-row elevation="25" justify="center" style="font: 1vw Neothic;">Координатор: Дарья Чегодаева <a :href=vkDasha><v-icon>$vuetify.icons.vk</v-icon></a> </v-row>
+          <v-row   justify="center">
+            <v-img  contain width="30vw" height="30vh"  src="@/assets/Daria.jpg"></v-img>
+          </v-row>
+        </v-col>
+        <v-divider vertical insert></v-divider>
+        <v-col>
+          <v-row justify="center" style="font: 1vw Neothic;">Ведущий: Дмитрий Лобанов <a :href=vkDima><v-icon>$vuetify.icons.vk</v-icon></a></v-row>
+          <v-row justify="center">
+            <v-img class="elevation-25" contain width="30vw" height="30vh"  src="@/assets/Lobanov.jpg"></v-img>
+          </v-row>
       </v-col>
+    </v-row>
 
-      <v-col cols="6">
-        <v-row justify="center"><h2>Ведущий Дмитрий Лобанов</h2> </v-row>
-        <v-row justify="center"  class="mb-3">(По любым вопросам во время свадьбы<v-icon>$vuetify.icons.vk</v-icon>)</v-row>
-        <v-row justify="center">
-          <v-img contain  max-height="340" max-width="472" src="@/assets/Lobanov.jpg"></v-img>
-        </v-row>
-      </v-col>
-    </v-row>
   </v-container>
 </template>
 <script>
-export default {};
+export default {
+  data (){
+    return {
+      vkDasha: "https://vk.com/chegodaevaaa",
+      vkDima: "https://vk.com/lobanovdmitryy"
+    }
+  }
+};
 </script>
 
 <style scoped>

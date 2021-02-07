@@ -1,16 +1,19 @@
 <template>
   <v-container>
-    <v-row justify="center" class="text-center mb-5" style=" font: 2vw Montserrat; font-weight: 900">
-      Свадьба состоится в Яхт-клуб "Лето" по адресу: <br>
-      Набережная Гребного канала, 109, Нижний Новгород
+    <v-container justify="center">
+      <v-row justify="center" style="font: 1vw Neothic;">Свадьба состоится в Яхт-клуб "Лето" по адресу:</v-row>
+      <v-row justify="center" style="font: 1vw Neothic;" class="mt-2">Набережная Гребного канала, 109, Нижний Новгород</v-row>
+    </v-container>
+
+    <v-row justify="center" style="margin-top: -1.3%;">
+      <v-col cols="12" md="6">
+        <div id="yandex-map-app">
+          <yandex-map :settings="settings" :coords="coords">
+            <ymap-marker :coords="coords" marker-id="123123"/>
+          </yandex-map>
+        </div>
+      </v-col>
     </v-row>
-    <yandex-map :settings="settings" :coords="coords" >
-      <ymap-marker 
-        marker-id="123" 
-        :coords="coords"
-        :balloon-template="balloonTemplate"
-      ></ymap-marker>
-    </yandex-map>
   </v-container>
 </template>
 
@@ -24,7 +27,7 @@ export default {
       apiKey: '',
       lang: 'ru_RU',
       coordorder: 'latlong',
-      version: '2.1'
+      version: '2.1',
     }
   }),
   computed: {
@@ -40,11 +43,14 @@ export default {
 </script>
 
 <style>
-.ymap-container {
-  height: 600px;
+#yandex-map-app {
+  width: 100%;
+  height:27vh;
 }
 
-.red {
-  color: white;
+.ymap-container {
+  height: 100%;
 }
+
+
 </style>
