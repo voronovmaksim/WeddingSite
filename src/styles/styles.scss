@@ -1,0 +1,27 @@
+@import "./variables";
+
+@mixin vor-font-size-breakpoints($factor: 1) {
+  $font-size-attr: font-size;
+
+  @media #{map-get($display-breakpoints, 'xl-only')} {
+    #{$font-size-attr}: 1rem * $factor * $xl-font-size-factor;
+  }
+  @media #{map-get($display-breakpoints, 'lg-only')} {
+    #{$font-size-attr}: 1rem * $factor * $lg-font-size-factor;
+  }
+  @media #{map-get($display-breakpoints, 'md-only')} {
+    #{$font-size-attr}: 1rem * $factor * $md-font-size-factor;
+  }
+  @media #{map-get($display-breakpoints, 'sm-only')} {
+    #{$font-size-attr}: 1rem * $factor * $sm-font-size-factor;
+  }
+  @media #{map-get($display-breakpoints, 'xs-only')} {
+    #{$font-size-attr}: 1rem * $factor * $xs-font-size-factor;
+  }
+}
+
+.adaptiveFontResolver {
+  font-family: $main-font;
+  @include vor-font-size-breakpoints()
+}
+

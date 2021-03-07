@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
    #page {
      background-image:  url(./assets/background/flowerTop.svg), url(./assets/background/background.svg), url(./assets/background/flowerBottom.svg);
       background-repeat: no-repeat, repeat-y, no-repeat;
@@ -24,14 +24,14 @@ export default {
   }
 
   @font-face {
-  font-family: "Neothic";
-  src: local("Neothic"),
-   url(./assets/Neothic.ttf) format("truetype");
+  font-family: $main-font;
+  src: local($main-font),
+   url(./assets/fonts/Neothic.ttf) format("truetype");
 }
 
  @font-face {
-  font-family: "KindlyJasmineG";
-  src: local("KindlyJasmineG"),
-   url(./assets/KindlyJasmineG.otf) format("truetype");
+  font-family: $guest-font;
+  src: local($guest-font),
+   url(./assets/fonts/KindlyJasmineG.otf) format("truetype");
 }
 </style>

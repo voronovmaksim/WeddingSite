@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
-import InstagramIcon from '@/assets/InstagramIcon.vue'
-import vkIcon from  '@/assets/VkIcon.vue'
+import InstagramIcon from '@/assets/icons/InstagramIcon.vue'
+import vkIcon from  '@/assets/icons/VkIcon.vue'
 
 Vue.use(Vuetify);
 

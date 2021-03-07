@@ -1,6 +1,6 @@
 <template>
 <v-container>
-    <v-row justify="center" style="font: 2vw Neothic;">До свадьбы осталось</v-row>
+    <v-row justify="center" class="adaptiveFontResolver">До свадьбы осталось</v-row>
     <vue-countdown-timer :start-time="1563589200" :end-time="1623589200" :interval="1000" :end-text="'Свадьба состоялась'"
       :day-txt="'Дней'" :hour-txt="'Часов'" :minutes-txt="'Минут'" :seconds-txt="'Секнуд'">
       <v-container class="text-center" slot="end-text" slot-scope="scope">
