@@ -1,28 +1,27 @@
 <template>
-    <v-container style="margin-top: -1.5%; width: 65%;">
+    <div>
         <v-row justify="center">
-            <v-col>
-                <v-row elevation="25" justify="center" style="font: 1vw Neothic;">Координатор: Дарья Чегодаева <a
-                        :href=vkDasha>
+            <v-col cols="5">
+                <div>
+                    Координатор: Дарья Чегодаева <a :href=vkDasha>
                     <v-icon>$vuetify.icons.vk</v-icon>
-                </a></v-row>
-                <v-row justify="center">
-                    <v-img contain width="30vw" height="30vh" src="@/assets/photos/Daria.jpg"></v-img>
-                </v-row>
+                </a></div>
+                <div justify="center">
+                    <v-img src="@/assets/photos/Daria.jpg"></v-img>
+                </div>
             </v-col>
             <v-divider vertical insert></v-divider>
-            <v-col>
-                <v-row justify="center" style="font: 1vw Neothic;">Ведущий: Дмитрий Лобанов <a :href=vkDima>
+            <v-col cols="5">
+                <div>Ведущи: Дмитрий Лобанов <a :href=vkDima>
                     <v-icon>$vuetify.icons.vk</v-icon>
-                </a></v-row>
-                <v-row justify="center">
-                    <v-img class="elevation-25" contain width="30vw" height="30vh"
-                           src="@/assets/photos/Lobanov.jpg"></v-img>
-                </v-row>
+                </a></div>
+                <div>
+                    <v-img src="@/assets/photos/Lobanov.jpg"></v-img>
+                </div>
             </v-col>
         </v-row>
 
-    </v-container>
+    </div>
 </template>
 <script>
     export default {

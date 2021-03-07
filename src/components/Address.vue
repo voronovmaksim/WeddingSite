@@ -1,22 +1,17 @@
 <template>
-    <v-container>
-        <v-container justify="center">
-            <v-row justify="center" style="font: 1vw Neothic;">Свадьба состоится в Яхт-клуб "Лето" по адресу:</v-row>
-            <v-row justify="center" style="font: 1vw Neothic;" class="mt-2">Набережная Гребного канала, 109, Нижний
-                Новгород
-            </v-row>
-        </v-container>
+    <div class="infoAdaptiveFontResolver">
+        <div>Свадьба состоится в Яхт-клуб "Лето" по адресу: <br>
+            Набережная Гребного канала, 109, Нижний Новгород
+        </div>
 
-        <v-row justify="center" style="margin-top: -1.3%;">
-            <v-col cols="12" md="6">
-                <div id="yandex-map-app">
-                    <yandex-map :settings="settings" :coords="coords">
-                        <ymap-marker :coords="coords" marker-id="123123"/>
-                    </yandex-map>
-                </div>
+        <v-row justify="center">
+            <v-col cols="12" sm="6" id="yandex-map-app">
+                <yandex-map :settings="settings" :coords="coords">
+                    <ymap-marker :coords="coords" marker-id="123123"/>
+                </yandex-map>
             </v-col>
         </v-row>
-    </v-container>
+    </div>
 </template>
 
 <script>
@@ -45,7 +40,7 @@
     }
 </script>
 
-<style>
+<style lang="scss" scoped>
     #yandex-map-app {
         width: 100%;
         height: 27vh;

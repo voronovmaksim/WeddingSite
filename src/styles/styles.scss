@@ -21,7 +21,18 @@
 }
 
 .adaptiveFontResolver {
+  line-height: 1.3;
   font-family: $main-font;
   @include vor-font-size-breakpoints()
+}
+
+.infoAdaptiveFontResolver {
+  @extend .adaptiveFontResolver;
+  @include vor-font-size-breakpoints($info-font-size-factor)
+}
+
+.setToZeroMarginPadding{
+  margin: 0;
+  padding: 0;
 }
 

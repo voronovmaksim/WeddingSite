@@ -1,18 +1,12 @@
 <template>
-    <v-container fluid>
-        <v-row>
-            <v-container sx12 md6 class="text-center">
-                <h1 id="guestName">{{guestName}}</h1>
-                <v-container>
-                    <v-row justify="center" class="adaptiveFontResolver">
-                        Мы будем рады видеть вас на нашей свадьбе, <br>
-                        которая состоится: <br>
-                        13 июня 2021 года <br>
-                    </v-row>
-                </v-container>
-            </v-container>
-        </v-row>
-    </v-container>
+    <div>
+        <div id="guestName">{{guestName}}</div>
+        <div>
+            Мы будем рады видеть вас на нашей свадьбе, <br>
+            которая состоится: <br>
+            13 июня 2021 года <br>
+        </div>
+    </div>
 </template>
 
 <script>

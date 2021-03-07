@@ -1,61 +1,80 @@
 <template>
-    <v-container>
-        <v-row justify="center" class="adaptiveFontResolver">До свадьбы осталось</v-row>
+    <div class="infoAdaptiveFontResolver">
+        <div>До свадьбы осталось</div>
         <vue-countdown-timer :start-time="1563589200" :end-time="1623589200" :interval="1000"
                              :end-text="'Свадьба состоялась'"
                              :day-txt="'Дней'" :hour-txt="'Часов'" :minutes-txt="'Минут'" :seconds-txt="'Секнуд'">
-            <v-container class="text-center" slot="end-text" slot-scope="scope">
+            <div slot="end-text" slot-scope="scope">
                 <h1>{{scope.props.endText}}</h1>
-            </v-container>
-            <v-container slot="countdown" slot-scope="scope">
-                <v-row justify="center">
-                    <v-col cols="12">
-                        <v-row justify="center">
-                            <v-col cols="2" md="1">
-                                <v-row justify="center" style="font: 1vw Neothic;">{{scope.props.dayTxt}}</v-row>
-                                <v-row justify="center" style="font: 1vw Neothic;">
-                                    <v-progress-circular :size="100" :width="15" color="green">{{scope.props.days}}
-                                    </v-progress-circular>
-                                </v-row>
-                            </v-col>
-                            <v-col cols="2" md="1">
-                                <v-row justify="center" style="font: 1vw Neothic;">{{scope.props.hourTxt}}</v-row>
-                                <v-row justify="center" style="font: 1vw Neothic;">
-                                    <v-progress-circular :size="100" :width="15" color="green">{{scope.props.hours}}
-                                    </v-progress-circular>
-                                </v-row>
-                            </v-col>
-                            <v-col cols="2" md="1">
-                                <v-row justify="center" style="font: 1vw Neothic;">{{scope.props.minutesTxt}}</v-row>
-                                <v-row justify="center" style="font: 1vw Neothic;">
-                                    <v-progress-circular :size="100" :width="15" color="green">{{scope.props.minutes}}
-                                    </v-progress-circular>
-                                </v-row>
-                            </v-col>
-                            <v-col cols="2" md="1">
-                                <v-row justify="center" style="font: 1vw Neothic;">{{scope.props.secondsTxt}}</v-row>
-                                <v-row justify="center" style="font: 1vw Neothic;">
-                                    <v-progress-circular :size="100" :width="15" color="green">{{scope.props.seconds}}
-                                    </v-progress-circular>
-                                </v-row>
-                            </v-col>
-                        </v-row>
-                    </v-col>
+            </div>
+            <div slot="countdown" slot-scope="scope">
+                <v-row id="test" justify="center">
+                    <div>
+                        <div class="text-center">{{scope.props.dayTxt}}</div>
+                        <v-progress-circular :size="progressCircularFactor * 29" :width="progressCircularFactor * 26"
+                                             :value="100"
+                                             color="green">
+                            {{scope.props.days}}
+                        </v-progress-circular>
+                    </div>
+                    <div>
+                        <div>{{scope.props.hourTxt}}</div>
+                        <v-progress-circular :size="progressCircularFactor * 28" :width="progressCircularFactor * 3"
+                                             color="green">
+                            {{scope.props.hours}}
+                        </v-progress-circular>
+                    </div>
+                    <div>
+                        <div>{{scope.props.minutesTxt}}</div>
+                        <v-progress-circular :size="progressCircularFactor * 28" :width="progressCircularFactor * 3"
+                                             color="green">
+                            {{scope.props.minutes}}
+                        </v-progress-circular>
+                    </div>
+                    <div>
+                        <div>{{scope.props.secondsTxt}}</div>
+                        <v-progress-circular :size="progressCircularFactor * 28" :width="progressCircularFactor * 3"
+                                             color="green">{{scope.props.seconds}}
+                        </v-progress-circular>
+                    </div>
                 </v-row>
-            </v-container>
+            </div>
         </vue-countdown-timer>
-    </v-container>
+    </div>
 </template>
 
 <script>
+    import VariablesScss from '../styles/variables.scss'
+
     export default {
         name: "Timer",
-        methods: {}
+        methods: {},
+        computed: {
+            progressCircularFactor() {
+                switch (this.$vuetify.breakpoint.name) {
+                    case 'xs':
+                        return VariablesScss.xsFontSizeFactor * 2
+                    case 'sm':
+                        return VariablesScss.smFontSizeFactor * 2
+                    case 'md':
+                        return VariablesScss.mdFontSizeFactor * 1.8
+                    case 'lg':
+                        return VariablesScss.lgFontSizeFactor * 1.5
+                    case 'xl':
+                        return VariablesScss.xlFontSizeFactor * 1.5
+                    default:
+                        alert("Error vor");
+                        return ""
+                }
+            }
+        }
     };
 </script>
 
-<style scoped>
-    v-row {
-        font: 6vw Neothic;
+<style lang="scss" scoped>
+    @import 'src/styles/styles.scss';
+
+    #test {
+        @include vor-font-size-breakpoints(0.5)
     }
 </style>
