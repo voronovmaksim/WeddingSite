@@ -10,8 +10,8 @@ Vue.config.productionTip = false
 Vue.use(VueCountdownTimer);
 
 new Vue({
-  vuetify,
-  store,
-  router,
-  render: h => h(App)
+    vuetify,
+    store,
+    router,
+    render: h => h(App)
 }).$mount('#app')
