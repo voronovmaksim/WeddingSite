@@ -1,7 +1,7 @@
 <template>
     <v-app id="page">
-        <v-main>
-            <v-container>
+        <v-main fluid>
+            <v-container class="ma-0 pa-0" fluid>
                 <router-view></router-view>
             </v-container>
         </v-main>
@@ -13,13 +13,13 @@
 </script>
 
 <style lang="scss">
-    #page {
-        background-image: url(./assets/background/flowerTop.svg), url(./assets/background/background.svg), url(./assets/background/flowerBottom.svg);
-        background-repeat: no-repeat, repeat-y, no-repeat;
-        background-position: top left, center, bottom right;
-        background-size: 30%, 60%, 30%;
-        background-attachment: fixed, scroll, fixed;
-    }
+    /*#page {*/
+    /*    background-image: url(./assets/background/flowerTop.svg), url(./assets/background/background.svg), url(./assets/background/flowerBottom.svg);*/
+    /*    background-repeat: no-repeat, repeat-y, no-repeat;*/
+    /*    background-position: top left, center, bottom right;*/
+    /*    background-size: 30%, 60%, 30%;*/
+    /*    background-attachment: fixed, scroll, fixed;*/
+    /*}*/
 
     @font-face {
         font-family: $main-font;

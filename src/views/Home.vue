@@ -1,41 +1,23 @@
 <template>
-    <v-container class="text-center adaptiveFontResolver">
+    <v-container fluid class="text-center ma-0 pa-0">
         <vor-header></vor-header>
-        <vor-countdown></vor-countdown>
-        <vor-address></vor-address>
-        <vor-dresscode></vor-dresscode>
-        <vor-program></vor-program>
-        <vor-contractor></vor-contractor>
-        <vor-hashtag></vor-hashtag>
+        <vor-info></vor-info>
+        <vor-footer></vor-footer>
     </v-container>
 </template>
 
 <script>
     import HeaderVue from '../components/Header.vue'
-    import CountdownVue from '../components/Countdown.vue'
-    import AddressVue from '../components/Address.vue'
-    import DresscodeVue from '../components/Dresscode.vue'
-    import HashtagVue from '../components/Hashtag.vue'
-    import ProgramVue from '../components/Program.vue'
-    import ContractorVue from '../components/Сontractor.vue'
-    // import FooterVue from '../components/Footer.vue'
+    import InfoVue from '../components/Info.vue'
+    import FooterVue from '../components/Footer.vue'
     export default {
         components: {
             vorHeader: HeaderVue,
-            vorCountdown: CountdownVue,
-            vorAddress: AddressVue,
-            vorDresscode: DresscodeVue,
-            vorHashtag: HashtagVue,
-            vorProgram: ProgramVue,
-            vorContractor: ContractorVue,
-            // vorFooter: FooterVue,
-            // VueScrollSnap
+            vorInfo: InfoVue,
+            vorFooter: FooterVue
         }
     }
 </script>
 
 <style scoped>
-    .v-container{
-        padding:5px
-    }
 </style>

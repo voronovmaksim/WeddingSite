@@ -1,8 +1,8 @@
 <template>
-    <v-container fluid style="background: black">
+    <v-container fluid style="background: orange">
         <v-row>
-            <v-col class="white--text">
-                Футер\ХэшТэг
+            <v-col >
+                Время сборки
             </v-col>
         </v-row>
 
