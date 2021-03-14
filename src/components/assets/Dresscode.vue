@@ -1,11 +1,33 @@
 <template>
-    <v-container fluid style="background: gray">
-        <v-row>
-            <v-col >
-                Дрескод
+    <v-container fluid>
+        <v-row class="flex-column">
+            <v-col>
+                <v-icon>mdi-hanger</v-icon>
+            </v-col>
+            <v-col>Дрес-код</v-col>
+            <v-col>
+                <div>Джентельмены в классических костюмах</div>
+                <div>Дамы в нарадях пастельных оттенков</div>
+            </v-col>
+            <v-col>
+                <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="20" fill="#ff80bf"/>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="20" fill="#99ff99"/>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="20" fill="#b3f0ff"/>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="20" fill="#ff6666"/>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
             </v-col>
         </v-row>
-
     </v-container>
 </template>
 

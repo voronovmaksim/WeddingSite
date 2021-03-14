@@ -24,12 +24,12 @@
     @font-face {
         font-family: $main-font;
         src: local($main-font),
-        url(./assets/fonts/Neothic.ttf) format("truetype");
+        url(./assets/fonts/saint-amour-regular.ttf) format("truetype");
     }
 
     @font-face {
         font-family: $guest-font;
         src: local($guest-font),
-        url(./assets/fonts/KindlyJasmineG.otf) format("truetype");
+        url(./assets/fonts/saint-amour-regular.woff) format("truetype");
     }
 </style>

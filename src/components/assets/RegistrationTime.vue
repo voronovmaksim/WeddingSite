@@ -1,11 +1,12 @@
 <template>
-    <v-container fluid style="background: blanchedalmond">
-        <v-row>
-            <v-col >
-                Время регистрации
+    <v-container fluid >
+        <v-row class="flex-column">
+            <v-col>
+                <v-icon>mdi-watch</v-icon>
             </v-col>
+            <v-col>Вызедная регистрация</v-col>
+            <v-col>16:00</v-col>
         </v-row>
-
     </v-container>
 </template>
 

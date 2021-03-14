@@ -4,18 +4,23 @@
             <v-col md="4">
                 <vor-where-vue></vor-where-vue>
             </v-col>
+            <v-divider></v-divider>
             <v-col md="4">
                 <vor-when-vue></vor-when-vue>
             </v-col>
+            <v-divider></v-divider>
             <v-col md="4">
                 <vor-guest-time></vor-guest-time>
             </v-col>
+            <v-divider></v-divider>
             <v-col md="4">
                 <vor-registration-time></vor-registration-time>
             </v-col>
+            <v-divider></v-divider>
             <v-col md="4">
                 <vor-dresscode></vor-dresscode>
             </v-col>
+            <v-divider></v-divider>
             <v-col md="4">
                 <vor-timer></vor-timer>
             </v-col>
