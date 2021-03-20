@@ -2,12 +2,12 @@
     <v-container fluid id="vorHeader">
         <v-row class="text-no-wrap white--text">
             <v-col cols="12" >
-                <div class="text-md-h1 text-h4 vorFont">Максим & Татьяна</div>
-                <div class="text-md-h5 text-h7">Are getting mmaried</div>
+                <div class="text-lg-h1-em text-h6 vorFont">Максим & Татьяна</div>
+<!--                <div class="text-md-h5 text-h7">Are getting mmaried</div>-->
             </v-col>
             <v-col cols="12">
-                <div class="text-md-h2 text-h5">{{guestName}}</div>
-                <div class="text-md-h3 text-h7">Приглашаем вас на нашу свадьбу</div>
+<!--                <div class="text-md-h2 text-h5">{{guestName}}</div>-->
+<!--                <div class="text-md-h3 text-h7">Приглашаем вас на нашу свадьбу</div>-->
             </v-col>
         </v-row>
     </v-container>
@@ -25,7 +25,7 @@
 
 <style lang="scss" scoped>
     .vorFont{
-        font-family: $guest-font, sans-serif !important;
+        font-family: $guest-font !important;
     }
 
     $background-attr: background;
@@ -33,7 +33,7 @@
         @media #{map-get($display-breakpoints, 'md-and-up')} {
             background: url('../assets/background/header/pcBack.png');
             background-size: cover;
-            background-repeat: no-repeat;
+
             /*background: red;*/
 
         }

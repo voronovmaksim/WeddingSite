@@ -1,27 +1,6 @@
+@import '~vuetify/src/styles/tools';
+@import '~vuetify/src/styles/settings/_variables.scss';
+@import "index-em";
+
 $guest-font: KindlyJasmineG;
 $main-font: Neothic;
-$info-font-size-factor: 0.7;
-$font-size-factor: 1;
-
-//$heading-font-family: $guest-font;
-
-//$headings: (
-//        'h1': (
-//                'font-family': $heading-font-family,
-//        ),
-//        'h2': (
-//                'font-family': $heading-font-family,
-//        ),
-//        'h3': (
-//                'font-family': $heading-font-family,
-//        ),
-//        'h4': (
-//                'font-family': $heading-font-family,
-//        ),
-//        'h5': (
-//                'font-family': $heading-font-family,
-//        ),
-//        'h6': (
-//                'font-family': $heading-font-family,
-//        ),
-//);
