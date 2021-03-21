@@ -1,107 +1,107 @@
-//see packages/vuetify/src/styles/settings/_variables.scss:116
+//It is copy of packages/vuetify/src/styles/settings/_variables.scss:116 in em
 $headings-em: () !default;
 $headings-em: map-deep-merge(
                 (
                         'h1-em': (
-                                'size': 6rem,
+                                'size': 6em,
                                 'weight': 300,
-                                'line-height': 6rem,
+                                'line-height': 6em,
                                 'letter-spacing': -.015625em,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h2-em': (
-                                'size': 3.75rem,
+                                'size': 3.75em,
                                 'weight': 300,
-                                'line-height': 3.75rem,
+                                'line-height': 3.75em,
                                 'letter-spacing': -.0083333333em,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h3-em': (
-                                'size': 3rem,
+                                'size': 3em,
                                 'weight': 400,
-                                'line-height': 3.125rem,
+                                'line-height': 3.125em,
                                 'letter-spacing': normal,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h4-em': (
-                                'size': 2.125rem,
+                                'size': 2.125em,
                                 'weight': 400,
-                                'line-height': 2.5rem,
+                                'line-height': 2.5em,
                                 'letter-spacing': .0073529412em,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h5-em': (
-                                'size': 1.5rem,
+                                'size': 1.5em,
                                 'weight': 400,
-                                'line-height': 2rem,
+                                'line-height': 2em,
                                 'letter-spacing': normal,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h6-em': (
-                                'size': 1.25rem,
+                                'size': 1.25em,
                                 'weight': 500,
-                                'line-height': 2rem,
+                                'line-height': 2em,
                                 'letter-spacing': .0125em,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'subtitle-1-em': (
-                                'size': 1rem,
+                                'size': 1,
                                 'weight': normal,
-                                'line-height': 1.75rem,
+                                'line-height': 1.75em,
                                 'letter-spacing': .009375em,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'subtitle-2-em': (
-                                'size': .875rem,
+                                'size': .875em,
                                 'weight': 500,
-                                'line-height': 1.375rem,
+                                'line-height': 1.375em,
                                 'letter-spacing': .0071428571em,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'body-1-em': (
-                                'size': 1rem,
+                                'size': 1em,
                                 'weight': 400,
-                                'line-height': 1.5rem,
+                                'line-height': 1.5em,
                                 'letter-spacing': .03125em,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'body-2-em': (
-                                'size': .875rem,
+                                'size': .875em,
                                 'weight': 400,
-                                'line-height': 1.25rem,
+                                'line-height': 1.25em,
                                 'letter-spacing': .0178571429em,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'button-em': (
-                                'size': .875rem,
+                                'size': .875em,
                                 'weight': 500,
-                                'line-height': 2.25rem,
+                                'line-height': 2.25em,
                                 'letter-spacing': .0892857143em,
                                 'font-family': $body-font-family,
                                 'text-transform': uppercase
                         ),
                         'caption-em': (
-                                'size': .75rem,
+                                'size': .75em,
                                 'weight': 400,
-                                'line-height': 1.25rem,
+                                'line-height': 1.25em,
                                 'letter-spacing': .0333333333em,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'overline-em': (
-                                'size': .75rem,
+                                'size': .75em,
                                 'weight': 500,
-                                'line-height': 2rem,
+                                'line-height': 2em,
                                 'letter-spacing': .1666666667em,
                                 'font-family': $body-font-family,
                                 'text-transform': uppercase
@@ -109,12 +109,3 @@ $headings-em: map-deep-merge(
                 ),
                 $headings-em
 );
-
-
-$typography-em: () !default;
-@each $type, $values in $headings-em {
-  $typography-em: map-deep-merge(
-                  $typography-em,
-                  (#{$type}: map-values($values))
-  );
-}

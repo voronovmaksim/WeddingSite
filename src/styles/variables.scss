@@ -1,6 +1,12 @@
-//@import '~vuetify/src/styles/tools';
-//@import '~vuetify/src/styles/settings/_variables.scss';
-//@import "index-em";
+@import '~vuetify/src/styles/settings/variables';
+@import "extended-variables/headings-em";
 
 $guest-font: KindlyJasmineG;
 $main-font: Neothic;
+
+@each $type, $values in $headings-em {
+  $typography: map-deep-merge(
+                  $typography,
+                  (#{$type}: map-values($values))
+  );
+}
