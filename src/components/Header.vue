@@ -2,7 +2,7 @@
     <v-container fluid id="vorHeader">
         <v-row class="text-no-wrap white--text">
             <v-col cols="12" >
-                <div class="text-lg-h1-em text-h6 vorFont">Максим & Татьяна</div>
+                <div class="vorFont text-lg-h1-em text-h6-em">Максим & Татьяна</div>
 <!--                <div class="text-md-h5 text-h7">Are getting mmaried</div>-->
             </v-col>
             <v-col cols="12">

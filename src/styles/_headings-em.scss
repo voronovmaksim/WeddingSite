@@ -3,7 +3,7 @@ $headings-em: () !default;
 $headings-em: map-deep-merge(
                 (
                         'h1-em': (
-                                'size': 1rem,
+                                'size': 6rem,
                                 'weight': 300,
                                 'line-height': 6rem,
                                 'letter-spacing': -.015625em,
@@ -43,7 +43,7 @@ $headings-em: map-deep-merge(
                                 'text-transform': false
                         ),
                         'h6-em': (
-                                'size': 11.25rem,
+                                'size': 1.25rem,
                                 'weight': 500,
                                 'line-height': 2rem,
                                 'letter-spacing': .0125em,
