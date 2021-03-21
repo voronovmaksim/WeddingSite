@@ -1,13 +1,13 @@
 <template>
     <v-container fluid id="vorHeader">
-        <v-row class="text-no-wrap white--text">
+        <v-row id="upFontSize" class="text-no-wrap white--text">
             <v-col cols="12" >
-                <div class="vorFont text-lg-h1 text-h6-em">Максим & Татьяна</div>
-<!--                <div class="text-md-h5 text-h7">Are getting mmaried</div>-->
+                <div class="headerFont text-lg-h1-em text-h6-em">Максим & Татьяна</div>
+                <div class="subtitleFont text-md-h3 text-subtitle-1">Are getting maried</div>
             </v-col>
             <v-col cols="12">
-<!--                <div class="text-md-h2 text-h5">{{guestName}}</div>-->
-<!--                <div class="text-md-h3 text-h7">Приглашаем вас на нашу свадьбу</div>-->
+                <div class="subtitleFont text-lg-h1 text-subtitle-1">{{ guest.guestName }}</div>
+                <div class="subtitleFont text-md-h3 text-subtitle-1">Приглашаем вас на нашу свадьбу</div>
             </v-col>
         </v-row>
     </v-container>
@@ -15,17 +15,27 @@
 
 <script>
     export default {
-        data() {
-            return {
-                guestName: "Тимур & Лида"
-            };
+        computed: {
+            getGuests(){
+                return this.$store.getters.guests
+            },
+            guest () {
+                const url = this.$route.params.url;
+                return this.$store.getters.guestByUrl(url)
+            }
         }
     };
 </script>
 
 <style lang="scss" scoped>
-    .vorFont{
+    .headerFont{
         font-family: $guest-font !important;
+    }
+    .subtitleFont{
+        font-family: 'Lora', serif !important;
+    }
+    #upFontSize{
+        font-size: 4rem;
     }
 
     $background-attr: background;

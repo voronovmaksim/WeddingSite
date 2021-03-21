@@ -6,9 +6,11 @@ import router from './router'
 import store from './store'
 import VueCountdownTimer from 'vuejs-countdown-timer';
 import './styles/styles.scss'
+import ICS from 'vue-ics'
 
 Vue.config.productionTip = false
 Vue.use(VueCountdownTimer);
+Vue.use(ICS, `{uidDomain: "vor", prodId: 123}`)
 
 new Vue({
     vuetify,

@@ -4,89 +4,89 @@ $headings-em: map-deep-merge(
                 (
                         'h1-em': (
                                 'size': 6em,
-                                'weight': 300,
-                                'line-height': 6em,
-                                'letter-spacing': -.015625em,
+                                'weight': unset,
+                                'line-height': 60%,
+                                'letter-spacing': unset, //WA oterwise error in css
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h2-em': (
                                 'size': 3.75em,
-                                'weight': 300,
-                                'line-height': 3.75em,
-                                'letter-spacing': -.0083333333em,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h3-em': (
                                 'size': 3em,
-                                'weight': 400,
-                                'line-height': 3.125em,
-                                'letter-spacing': normal,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h4-em': (
                                 'size': 2.125em,
-                                'weight': 400,
-                                'line-height': 2.5em,
-                                'letter-spacing': .0073529412em,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h5-em': (
                                 'size': 1.5em,
-                                'weight': 400,
-                                'line-height': 2em,
-                                'letter-spacing': normal,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h6-em': (
                                 'size': 1.25em,
-                                'weight': 500,
-                                'line-height': 2em,
-                                'letter-spacing': .0125em,
+                                'weight': unset,
+                                'line-height': 60%,
+                                'letter-spacing': unset,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'subtitle-1-em': (
                                 'size': 1,
-                                'weight': normal,
-                                'line-height': 1.75em,
-                                'letter-spacing': .009375em,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'subtitle-2-em': (
                                 'size': .875em,
-                                'weight': 500,
-                                'line-height': 1.375em,
-                                'letter-spacing': .0071428571em,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'body-1-em': (
                                 'size': 1em,
-                                'weight': 400,
-                                'line-height': 1.5em,
-                                'letter-spacing': .03125em,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'body-2-em': (
                                 'size': .875em,
-                                'weight': 400,
-                                'line-height': 1.25em,
-                                'letter-spacing': .0178571429em,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $body-font-family,
                                 'text-transform': false
                         ),
                         'button-em': (
                                 'size': .875em,
-                                'weight': 500,
-                                'line-height': 2.25em,
-                                'letter-spacing': .0892857143em,
+                                'weight': unset,
+                                'line-height': normal,
+                                'letter-spacing': unset,
                                 'font-family': $body-font-family,
                                 'text-transform': uppercase
                         ),

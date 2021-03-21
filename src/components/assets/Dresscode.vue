@@ -2,28 +2,32 @@
     <v-container fluid>
         <v-row class="flex-column">
             <v-col>
-                <v-icon>mdi-hanger</v-icon>
+                <div><v-icon>mdi-hanger</v-icon></div>
+                <div>Дрес-код</div>
             </v-col>
-            <v-col>Дрес-код</v-col>
             <v-col>
                 <div>Джентельмены в классических костюмах</div>
                 <div>Дамы в нарадях пастельных оттенков</div>
             </v-col>
             <v-col>
                 <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#ff80bf"/>
+                    <circle cx="25" cy="25" r="20" fill="#e1f5fe"/>
                     Sorry, your browser does not support inline SVG.
                 </svg>
                 <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#99ff99"/>
+                    <circle cx="25" cy="25" r="20" fill="#fed6d9"/>
                     Sorry, your browser does not support inline SVG.
                 </svg>
                 <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#b3f0ff"/>
+                    <circle cx="25" cy="25" r="20" fill="#f2d8cf"/>
                     Sorry, your browser does not support inline SVG.
                 </svg>
                 <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#ff6666"/>
+                    <circle cx="25" cy="25" r="20" fill="#d0c2bd"/>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="20" fill="#c8c6a2"/>
                     Sorry, your browser does not support inline SVG.
                 </svg>
             </v-col>

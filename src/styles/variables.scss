@@ -2,7 +2,7 @@
 @import "extended-variables/headings-em";
 
 $guest-font: KindlyJasmineG;
-$main-font: Neothic;
+$body-font-family: 'Lora', serif !important;
 
 @each $type, $values in $headings-em {
   $typography: map-deep-merge(

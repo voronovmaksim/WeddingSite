@@ -1,5 +1,5 @@
 <template>
-    <v-container class="ma-0 pa-0" fluid>
+    <v-container :class="{'raise-font-size': $vuetify.breakpoint.mdAndUp}" class="ma-0 pa-0" fluid>
         <v-row no-gutters class="flex-column flex-md-row">
             <v-col md="4">
                 <vor-where-vue></vor-where-vue>
@@ -14,15 +14,15 @@
             </v-col>
             <v-divider></v-divider>
             <v-col md="4">
-                <vor-registration-time></vor-registration-time>
-            </v-col>
-            <v-divider></v-divider>
-            <v-col md="4">
                 <vor-dresscode></vor-dresscode>
             </v-col>
             <v-divider></v-divider>
             <v-col md="4">
                 <vor-timer></vor-timer>
+            </v-col>
+            <v-divider></v-divider>
+            <v-col md="4" order=1>
+                <vor-registration-time></vor-registration-time>
             </v-col>
         </v-row>
     </v-container>
@@ -48,6 +48,8 @@
     }
 </script>
 
-<style>
-
+<style >
+.raise-font-size{
+    font-size: 20px;
+}
 </style>

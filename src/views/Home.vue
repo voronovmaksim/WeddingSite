@@ -11,6 +11,14 @@
     import InfoVue from '../components/Info.vue'
     import FooterVue from '../components/Footer.vue'
     export default {
+        props: ['url'],
+        computed : {
+          test (){
+              const  url = this.url;
+              console.error(url)
+              return "kek"
+          }
+        },
         components: {
             vorHeader: HeaderVue,
             vorInfo: InfoVue,
