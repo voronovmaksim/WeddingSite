@@ -1,10 +1,10 @@
 <template>
-    <v-footer fixed dark padless>
-        <v-col cols="12" >
-            <a :href="urlInsta" class="white--text text-md-h5 subtitleFont">#наконецВороновы</a>
-            <v-icon>$vuetify.icons.inst</v-icon>
-        </v-col>
-    </v-footer >
+    <v-footer app fixed dark padless class="text-center">
+            <v-col cols="12">
+                <a :href="urlInsta" class="white--text text-md-h5 subtitleFont">#наконецВороновы</a>
+                <v-icon>$vuetify.icons.inst</v-icon>
+            </v-col>
+    </v-footer>
 </template>
 
 <script>

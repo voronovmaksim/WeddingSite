@@ -1,5 +1,5 @@
 <template>
-    <v-container :class="{'raise-font-size': $vuetify.breakpoint.mdAndUp}" class="ma-0 pa-0" fluid>
+    <v-container :class="{'raise-font-size': $vuetify.breakpoint.smAndUp}" class="ma-0 pa-0" fluid>
         <v-row no-gutters class="flex-column flex-md-row">
             <v-col md="4">
                 <vor-where-vue></vor-where-vue>

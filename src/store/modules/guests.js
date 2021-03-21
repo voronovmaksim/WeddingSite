@@ -119,7 +119,7 @@ export default {
             },
             {
                 id: '24',
-                guestName: 'Сергей Дмитриевич и Тетя Катя',
+                guestName: 'Сергей Дмитриевич и Тетя Екатерина',
                 url: 'SergeyAndEkaterina'
             },
             {

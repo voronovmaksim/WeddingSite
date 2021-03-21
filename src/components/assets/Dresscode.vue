@@ -3,7 +3,7 @@
         <v-row class="flex-column">
             <v-col>
                 <div><v-icon>mdi-hanger</v-icon></div>
-                <div>Дрес-код</div>
+                <div>Дресc-код</div>
             </v-col>
             <v-col>
                 <div>Джентельмены в классических костюмах</div>

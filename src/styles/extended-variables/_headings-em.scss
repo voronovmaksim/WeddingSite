@@ -29,15 +29,15 @@ $headings-em: map-deep-merge(
                         'h4-em': (
                                 'size': 2.125em,
                                 'weight': unset,
-                                'line-height': normal,
-                                'letter-spacing': unset,
+                                'line-height': none,
+                                'letter-spacing': none,
                                 'font-family': $heading-font-family,
                                 'text-transform': false
                         ),
                         'h5-em': (
                                 'size': 1.5em,
                                 'weight': unset,
-                                'line-height': normal,
+                                'line-height': 0.6em,
                                 'letter-spacing': unset,
                                 'font-family': $heading-font-family,
                                 'text-transform': false

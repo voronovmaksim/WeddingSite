@@ -1,13 +1,14 @@
 <template>
     <v-container fluid id="vorHeader">
-        <v-row id="upFontSize" class="text-no-wrap white--text">
+        <v-row id="upFontSize" class="white--text">
             <v-col cols="12" >
-                <div class="headerFont text-lg-h1-em text-h6-em">Максим & Татьяна</div>
-                <div class="subtitleFont text-md-h3 text-subtitle-1">Are getting maried</div>
+                <div :class="{'pl-16 ml-16': $vuetify.breakpoint.smAndUp, 'pl-11':$vuetify.breakpoint.xsOnly}"
+                     class="headerFont text-md-h1-em text-sm-h4-em text-h5-em">Максим & Татьяна</div>
+                <div class="subtitleFont text-md-h3 text-sm-h5 text-subtitle-1">Are getting maried</div>
             </v-col>
             <v-col cols="12">
-                <div class="subtitleFont text-lg-h1 text-subtitle-1">{{ guest.guestName }}</div>
-                <div class="subtitleFont text-md-h3 text-subtitle-1">Приглашаем вас на нашу свадьбу</div>
+                <div class="subtitleFont text-lg-h1 text-sm-h4 text-h6 font-weight-medium">{{ guest.guestName }}</div>
+                <div class="subtitleFont text-md-h3 text-sm-h5 text-subtitle-1">Приглашаем {{guest.guestName.toString().indexOf(" и ") == -1?'Тебя':'Вас' }} на нашу свадьбу</div>
             </v-col>
         </v-row>
     </v-container>
@@ -40,19 +41,19 @@
 
     $background-attr: background;
     #vorHeader {
-        @media #{map-get($display-breakpoints, 'md-and-up')} {
+        /*@media #{map-get($display-breakpoints, 'md-and-up')} {*/
             background: url('../assets/background/header/pcBack.png');
             background-size: cover;
 
             /*background: red;*/
 
-        }
-        @media #{map-get($display-breakpoints, 'sm-and-down')} {
+        /*}*/
+ /*       @media #{map-get($display-breakpoints, 'sm-and-down')} {
             background: url('../assets/background/header/phoneBack.png');
             background-size: cover;
             background-repeat: no-repeat;
-            /*background: red;*/
-        }
+            !*background: red;*!
+        }*/
     }
 
 </style>
