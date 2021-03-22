@@ -114,17 +114,17 @@ export default {
             },
             {
                 id: '23',
-                guestName: 'Ольга Ивановна и Дядя Андрей',
+                guestName: 'Ольга Ивановна и Андрей Валерьевич',
                 url: 'OlgaAndAndrey'
             },
             {
                 id: '24',
-                guestName: 'Сергей Дмитриевич и Тетя Екатерина',
+                guestName: 'Сергей Дмитриевич и Екатерина Васильевна',
                 url: 'SergeyAndEkaterina'
             },
             {
                 id: '25',
-                guestName: 'Екатерина и Тетя Нина',
+                guestName: 'Екатерина и Нина Михайловна',
                 url: 'EkaterinaAndNina'
             },
         ]

@@ -8,7 +8,7 @@
             </v-col>
             <v-col cols="12">
                 <div class="subtitleFont text-lg-h1 text-sm-h4 text-h6 font-weight-medium">{{ guest.guestName }}</div>
-                <div class="subtitleFont text-md-h3 text-sm-h5 text-subtitle-1">Приглашаем {{guest.guestName.toString().indexOf(" и ") == -1?'Тебя':'Вас' }} на нашу свадьбу</div>
+                <div class="subtitleFont text-md-h3 text-sm-h5 text-subtitle-1">Приглашаем {{ pronoun }} на нашу свадьбу</div>
             </v-col>
         </v-row>
     </v-container>
@@ -23,6 +23,16 @@
             guest () {
                 const url = this.$route.params.url;
                 return this.$store.getters.guestByUrl(url)
+            },
+            pronoun () {
+                const guest = this.guest.guestName.toString().toLowerCase();
+                let isVas = (guest.indexOf(" и ") != -1 || guest.indexOf("родители") != -1);
+                console.log(guest.indexOf("родители"))
+                var res ="Тебя";
+                if (isVas){
+                    res="Вас"
+                }
+                return res;
             }
         }
     };
