@@ -21,8 +21,10 @@
                 return this.$store.getters.guests
             },
             guest () {
-                const url = this.$route.params.url;
-                return this.$store.getters.guestByUrl(url)
+                // const url = this.$route.params.url;
+                const url = this.$route.query.guest;
+                let guestByUrl = this.$store.getters.guestByUrl(url);
+                return guestByUrl === undefined ? {"guestName":""}:guestByUrl;
             },
             pronoun () {
                 const guest = this.guest.guestName.toString().toLowerCase();
