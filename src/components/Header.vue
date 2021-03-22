@@ -29,7 +29,6 @@
             pronoun () {
                 const guest = this.guest.guestName.toString().toLowerCase();
                 let isVas = (guest.indexOf(" и ") != -1 || guest.indexOf("родители") != -1);
-                console.log(guest.indexOf("родители"))
                 var res ="Тебя";
                 if (isVas){
                     res="Вас"
