@@ -3,11 +3,11 @@
         <v-row class="flex-column">
             <v-col>
                 <v-icon>mdi-calendar-range</v-icon>
-                <div>Когда</div>
+                <div class="font-italic">Когда</div>
             </v-col>
             <v-col>
-                <div>13</div>
-                <div>Июня 2021</div>
+                <div>13 июня</div>
+                <div>2021 года</div>
             </v-col>
             <v-col>
                 <v-btn elevation="15" @click="downloadCalendar()">Добавить в календарь</v-btn>

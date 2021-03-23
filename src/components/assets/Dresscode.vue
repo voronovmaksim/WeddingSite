@@ -3,11 +3,11 @@
         <v-row class="flex-column">
             <v-col>
                 <div><v-icon>mdi-hanger</v-icon></div>
-                <div>Дресc-код</div>
+                <div class="font-italic">Дресc-код</div>
             </v-col>
             <v-col>
-                <div>Джентельмены в классических костюмах</div>
-                <div>Дамы в нарадях пастельных оттенков</div>
+                <div>Джентельмены: классические костюмы</div>
+                <div>Дамы: наряды пастельных оттенков</div>
             </v-col>
             <v-col>
                 <svg height="50" width="50">

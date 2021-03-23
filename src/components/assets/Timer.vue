@@ -3,7 +3,7 @@
         <v-row class="flex-column">
             <v-col>
                 <v-icon>mdi-timer-sand</v-icon>
-                <div>До мероприятия</div>
+                <div class="font-italic">До мероприятия</div>
             </v-col>
             <v-col>
                 <vue-countdown-timer :start-time="1563589200" :end-time="1623589200" :interval="1000"

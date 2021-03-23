@@ -21,8 +21,8 @@
                 <vor-timer></vor-timer>
             </v-col>
             <v-divider></v-divider>
-            <v-col md="4" order=1>
-                <vor-registration-time></vor-registration-time>
+            <v-col md="4">
+                <vorCordinator></vorCordinator>
             </v-col>
         </v-row>
     </v-container>
@@ -32,18 +32,18 @@
     import WhenVue from './assets/When.vue'
     import WhereVue from './assets/Where.vue'
     import GuestTimeVue from './assets/GuestTime.vue'
-    import RegistrationTimeVue from './assets/RegistrationTime.vue'
     import DresscodeVue from './assets/Dresscode.vue'
     import TimerVue from './assets/Timer.vue'
+    import CordinatorVue from './assets/Cordinator'
 
     export default {
         components: {
             vorWhenVue: WhenVue,
             vorWhereVue: WhereVue,
             vorGuestTime: GuestTimeVue,
-            vorRegistrationTime: RegistrationTimeVue,
             vorDresscode: DresscodeVue,
-            vorTimer: TimerVue
+            vorTimer: TimerVue,
+            vorCordinator: CordinatorVue
         }
     }
 </script>
