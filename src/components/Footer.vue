@@ -1,7 +1,7 @@
 <template>
     <v-footer app fixed dark padless class="text-center">
             <v-col cols="12">
-                <a :href="urlInsta" class="white--text text-md-h5 subtitleFont">#наконецВороновы <v-icon>$vuetify.icons.inst</v-icon></a>
+                <a :href="urlInsta" class="white--text text-md-h5-em" style="font-family: 'Lora', serif !important">#наконецВороновы <v-icon>$vuetify.icons.inst</v-icon></a>
 
             </v-col>
     </v-footer>
@@ -24,7 +24,4 @@
 </script>
 
 <style lang="scss" scoped>
-    .subtitleFont {
-        font-family: 'Lora', serif !important;
-    }
 </style>
