@@ -9,7 +9,7 @@
                 <vue-countdown-timer :start-time="1563589200" :end-time="1623589200" :interval="1000"
                                      :end-text="'Свадьба состоялась'"
                                      :day-txt="'Дней'" :hour-txt="'Часов'" :minutes-txt="'Минут'"
-                                     :seconds-txt="'Секнуд'">
+                                     :seconds-txt="'Секунд'">
                     <v-col slot="end-text" slot-scope="scope">{{scope.props.endText}}</v-col>
                     <div slot="countdown" slot-scope="scope">
                         <v-row justify="center">
