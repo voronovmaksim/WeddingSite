@@ -127,6 +127,11 @@ export default {
                 guestName: 'Екатерина и Нина Михайловна',
                 url: 'EkaterinaAndNina'
             },
+            {
+                id: '26',
+                guestName: 'Павел и Елизавета',
+                url: 'PavelAndLiza'
+            }
         ]
     },
     mutation: {},
