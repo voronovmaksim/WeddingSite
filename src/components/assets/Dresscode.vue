@@ -2,35 +2,35 @@
     <v-container fluid>
         <v-row class="flex-column">
             <v-col>
-                <div><v-icon>mdi-hanger</v-icon></div>
-                <div class="font-italic">Дресc-код</div>
+                <div><v-icon>mdi-train-car-passenger</v-icon></div>
+                <div class="font-italic">Трансфер</div>
             </v-col>
             <v-col>
-                <div>Джентльмены: классические костюмы</div>
-                <div>Дамы: наряды пастельных оттенков</div>
+                <div>Нижний Новгород –– Авиатор: Гости добираются самостоятельно</div>
+                <div>Авиатор –– Нижний Новгород: Трансфер до пл. Ленина в 23:15</div>
             </v-col>
-            <v-col>
-                <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#e1f5fe"/>
-                    Sorry, your browser does not support inline SVG.
-                </svg>
-                <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#fed6d9"/>
-                    Sorry, your browser does not support inline SVG.
-                </svg>
-                <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#f2d8cf"/>
-                    Sorry, your browser does not support inline SVG.
-                </svg>
-                <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#d0c2bd"/>
-                    Sorry, your browser does not support inline SVG.
-                </svg>
-                <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="20" fill="#c8c6a2"/>
-                    Sorry, your browser does not support inline SVG.
-                </svg>
-            </v-col>
+<!--            <v-col>-->
+<!--                <svg height="50" width="50">-->
+<!--                    <circle cx="25" cy="25" r="20" fill="#e1f5fe"/>-->
+<!--                    Sorry, your browser does not support inline SVG.-->
+<!--                </svg>-->
+<!--                <svg height="50" width="50">-->
+<!--                    <circle cx="25" cy="25" r="20" fill="#fed6d9"/>-->
+<!--                    Sorry, your browser does not support inline SVG.-->
+<!--                </svg>-->
+<!--                <svg height="50" width="50">-->
+<!--                    <circle cx="25" cy="25" r="20" fill="#f2d8cf"/>-->
+<!--                    Sorry, your browser does not support inline SVG.-->
+<!--                </svg>-->
+<!--                <svg height="50" width="50">-->
+<!--                    <circle cx="25" cy="25" r="20" fill="#d0c2bd"/>-->
+<!--                    Sorry, your browser does not support inline SVG.-->
+<!--                </svg>-->
+<!--                <svg height="50" width="50">-->
+<!--                    <circle cx="25" cy="25" r="20" fill="#c8c6a2"/>-->
+<!--                    Sorry, your browser does not support inline SVG.-->
+<!--                </svg>-->
+<!--            </v-col>-->
         </v-row>
     </v-container>
 </template>

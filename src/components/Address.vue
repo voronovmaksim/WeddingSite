@@ -1,7 +1,7 @@
 <template>
     <div class="infoAdaptiveFontResolver">
         <div>Свадьба состоится в Яхт-клуб "Лето" по адресу: <br>
-            Набережная Гребного канала, 109, Нижний Новгород
+            Большое Козино, ул. Авиационная, дом 1, Нижегородская обл
         </div>
 
         <v-row justify="center">
@@ -20,7 +20,7 @@
     export default {
         components: {yandexMap, ymapMarker},
         data: () => ({
-            coords: [56.329627, 44.055070],
+            coords: [56.410898, 43.766693],
             settings: {
                 apiKey: '',
                 lang: 'ru_RU',

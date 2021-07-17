@@ -6,7 +6,7 @@
                 <div class="font-italic">Когда</div>
             </v-col>
             <v-col>
-                <div>13 июня</div>
+                <div>7 августа</div>
                 <div>2021 года</div>
             </v-col>
             <v-col>
@@ -26,10 +26,10 @@
         },
         mounted() {
             this.$ics.removeAllEvents()
-            var start = new Date('June 13, 2021 12:30:00') //WTF time is incorretct
-            var end = new Date('June 13, 2021 20:00:00')
-            var loc="Ресторан Шатер Яхт клуб Лето Набережная гребного каналаб 109с1";
-            this.$ics.addEvent("ru", "Свадьба Максима и Татьяны", "Будем рады вас видеть", loc, start, end,"",{})
+            var start = new Date('August 7, 2021 12:30:00') //WTF time is incorretct
+            var end = new Date('August 7, 2021 20:00:00')
+            var loc="Загородный клуб Авиатор. ул. Авиационная, дом 1, Большое Козино";
+            this.$ics.addEvent("ru", "Свадьба Максима и Светланы", "Будем рады вас видеть", loc, start, end,"",{})
         }
     }
 

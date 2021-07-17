@@ -3,8 +3,8 @@
         <v-row id="upFontSize" class="white--text">
             <v-col cols="12" >
                 <div :class="{'pl-16 ml-16': $vuetify.breakpoint.smAndUp, 'pl-11':$vuetify.breakpoint.xsOnly}"
-                     class="headerFont text-md-h1-em text-sm-h4-em text-h5-em">Максим & Татьяна</div>
-                <div class="subtitleFont text-md-h3 text-sm-h5 text-subtitle-1">Are getting maried</div>
+                     class="headerFont text-md-h1-em text-sm-h4-em text-h5-em">Максим & Светлана</div>
+                <div class="subtitleFont text-md-h3 text-sm-h5 text-subtitle-1">Are getting married</div>
             </v-col>
             <v-col cols="12">
                 <div class="subtitleFont text-lg-h1 text-sm-h4 text-h6 font-weight-medium">{{ guest.guestName }}</div>

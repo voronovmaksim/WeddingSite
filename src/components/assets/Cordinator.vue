@@ -3,14 +3,14 @@
         <v-row class="flex-column">
             <v-col>
                 <v-icon>mdi-emoticon-happy-outline</v-icon>
-                <div class="font-italic">Координатор</div>
+                <div class="font-italic">Организатор</div>
             </v-col>
             <v-col>
                 <v-avatar>
-                    <img src="https://sun1-20.userapi.com/s/v1/if1/X13KeYXxrwcBjrGqbk4-d5-tOD2XVj4w_c_AbHu3-awEQ_Lh57IB26JnJvRgsQ_Kd171mE2d.jpg?size=50x0&quality=96&crop=58,394,1297,1297&ava=1">
+                    <img src="https://sun1-88.userapi.com/s/v1/ig2/3droen9-mZvqcOM7X2MNXWjZE1dvguEwuPH_4UhQNHWuwyeFJzdcuu0ZLbu74e9yqtg3wjjeGsY2yNotdyalbuHM.jpg?size=200x0&quality=96&crop=283,685,630,630&ava=1">
                 </v-avatar>
                 <v-row justify="center" class="flex-column" no-gutters>
-                    <v-col>Дарья Чегодаева
+                    <v-col>Диана Зальвовская
                         <a :href="urlVk">
                             <v-icon>$vuetify.icons.vk</v-icon>
                         </a>
@@ -27,7 +27,7 @@
 export default {
     data() {
         return {
-            urlVk: "https://vk.com/chegodaevaaa"
+            urlVk: "https://vk.com/id117172188"
         };
     },
 }

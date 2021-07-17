@@ -6,11 +6,11 @@
                 <div class="font-italic">Где</div>
             </v-col>
             <v-col align-self="start">
-                <div>Ресторан Шатер Яхт клуб Лето</div>
-                <div>Набережная гребного канала, 109с1</div>
+                <div>Загородный клуб Авиатор</div>
+                <div> Большое Козино, ул. Авиационная, дом 1</div>
             </v-col>
             <v-col>
-                <v-btn href="https://yandex.ru/maps/-/CCUUYFqc8B" elevation="15">смотреть на карте</v-btn>
+                <v-btn href="https://yandex.ru/maps/-/CCUevDGZCC" elevation="15">смотреть на карте</v-btn>
             </v-col>
         </v-row>
 

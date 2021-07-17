@@ -6,7 +6,7 @@
                 <div class="font-italic">До мероприятия</div>
             </v-col>
             <v-col>
-                <vue-countdown-timer :start-time="1563589200" :end-time="1623589200" :interval="1000"
+                <vue-countdown-timer :start-time="1563589200" :end-time="1628344800" :interval="1000"
                                      :end-text="'Свадьба состоялась'"
                                      :day-txt="'Дней'" :hour-txt="'Часов'" :minutes-txt="'Минут'"
                                      :seconds-txt="'Секунд'">
