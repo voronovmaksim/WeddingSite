@@ -3,7 +3,7 @@
         <v-row class="flex-column">
             <v-col>
                 <v-icon>mdi-emoticon-happy-outline</v-icon>
-                <div class="font-italic">Организатор</div>
+                <div class="font-italic">Ведущая</div>
             </v-col>
             <v-col>
                 <v-avatar>
@@ -15,7 +15,7 @@
                             <v-icon>$vuetify.icons.vk</v-icon>
                         </a>
                     </v-col>
-                    <v-col>(по любым вопросам)</v-col>
+<!--                    <v-col>(по любым вопросам)</v-col>-->
                 </v-row>
             </v-col>
         </v-row>
