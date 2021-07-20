@@ -224,7 +224,7 @@ export default {
             },
             {
                 id: '45',
-                guestName: 'Дмитрий',
+                guestName: 'Сергей и Дарья',
                 url: 'sergeyanddaria_s'
             }
         ]
